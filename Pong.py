@@ -118,6 +118,7 @@ while True:
         pen.write("Player A: {} Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
 
     # Paddle and ball collision
+    # includes sound 
     if (ball.xcor() > 340 and ball.xcor()< 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
         ball.setx(340)
         ball.dx *= -1.03
